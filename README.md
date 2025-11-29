@@ -22,7 +22,7 @@ This project allows you to:
 
 ## Project Structure
 
-\`\`\`
+```
 .
 ├── images/             
 ├── templates/
@@ -32,7 +32,7 @@ This project allows you to:
 ├── images.zip          
 ├── requirements.txt
 └── .gitattributes
-\`\`\`
+```
 
 ---
 
@@ -42,7 +42,7 @@ Follow these instructions to run the project locally.
 
 ---
 
-## 1 Clone the Repository
+## 1. Clone the Repository
 
 ```bash
 git clone https://github.com/<your-username>/zip-ocr.git
@@ -53,7 +53,7 @@ Replace <your-username> with your GitHub username.
 
 ---
 
-## 2️ Create & Activate Python Environment
+## 2️. Create & Activate Python Environment
 
 ### Option A — Conda
 ```bash
@@ -78,7 +78,7 @@ source venv/bin/activate
 
 ---
 
-## 3️ Install Dependencies
+## 3️. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -88,7 +88,7 @@ pip install -r requirements.txt
 
 ---
 
-## 4️ Run the FastAPI Server
+## 4️. Run the FastAPI Server
 
 ### Option A — Run main.py
 ```bash
@@ -107,7 +107,7 @@ Uvicorn running on http://0.0.0.0:8000
 
 ---
 
-## 5️5 Open the Web Application
+## 5️. Open the Web Application
 
 Open your browser at:
 ```
@@ -116,7 +116,7 @@ http://127.0.0.1:8000/
 
 ---
 
-# 🧾 Step 1 — Upload ZIP & Extract Text
+## 6. Upload ZIP & Extract Text
 
 1. Click "Choose File" and select a ZIP containing images  
 2. Click "Upload & Extract"
@@ -133,7 +133,7 @@ You will see:
 
 ---
 
-## Search Text
+## 7. Search Text
 
 1. Enter any keyword  
 2. Click "Search"
@@ -143,24 +143,8 @@ The system will:
 - Search text (case-insensitive)  
 - Show filenames containing the keyword  
 
-If output.csv doesn't exist:
-> CSV does not exist. Upload ZIP first.
-
 ---
 
-## How It Works Internally
-
-### Upload ZIP (POST /upload_zip)
-- Unzip ZIP contents  
-- Run docTR OCR on each image  
-- Save results to output.csv  
-
-### Search Text (POST /search_text)
-- Read output.csv  
-- Case-insensitive matching  
-- Return matching filenames  
-
----
 
 ## License
 This project is a prototype for demonstration and portfolio usage.

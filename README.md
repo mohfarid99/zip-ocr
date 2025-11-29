@@ -10,7 +10,7 @@ This project allows you to:
 
 ---
 
-## ✨ Features
+## Features
 
 - Deep-learning OCR using docTR (PyTorch backend)
 - Upload ZIP containing images: .png, .jpg, .jpeg, .bmp
@@ -20,7 +20,7 @@ This project allows you to:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 \`\`\`
 .
@@ -36,83 +36,83 @@ This project allows you to:
 
 ---
 
-# 🚀 Step-by-Step Setup & Usage
+# Step-by-Step Setup & Usage
 
 Follow these instructions to run the project locally.
 
 ---
 
-## 1️⃣ Clone the Repository
+## 1 Clone the Repository
 
-\`\`\`bash
+```bash
 git clone https://github.com/<your-username>/zip-ocr.git
 cd zip-ocr
-\`\`\`
+```
 
 Replace <your-username> with your GitHub username.
 
 ---
 
-## 2️⃣ Create & Activate Python Environment
+## 2️ Create & Activate Python Environment
 
 ### Option A — Conda
-\`\`\`bash
+```bash
 conda create -n zip-ocr python=3.10 -y
 conda activate zip-ocr
-\`\`\`
+```
 
 ### Option B — venv
-\`\`\`bash
+```bash
 python -m venv venv
-\`\`\`
+```
 
 Windows:
-\`\`\`bash
+```bash
 venv\Scripts\activate
-\`\`\`
+```
 
 macOS / Linux:
-\`\`\`bash
+```bash
 source venv/bin/activate
-\`\`\`
+```
 
 ---
 
-## 3️⃣ Install Dependencies
+## 3️ Install Dependencies
 
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 ⚠️ First run may download docTR model files (takes a few minutes).
 
 ---
 
-## 4️⃣ Run the FastAPI Server
+## 4️ Run the FastAPI Server
 
 ### Option A — Run main.py
-\`\`\`bash
+```bash
 python main.py
-\`\`\`
+```
 
 ### Option B — Use Uvicorn
-\`\`\`bash
+```bash
 uvicorn main:app --reload
-\`\`\`
+```
 
 You should see:
-\`\`\`
+```
 Uvicorn running on http://0.0.0.0:8000
-\`\`\`
+```
 
 ---
 
-## 5️⃣ Open the Web Application
+## 5️5 Open the Web Application
 
 Open your browser at:
-\`\`\`
+```
 http://127.0.0.1:8000/
-\`\`\`
+```
 
 ---
 
@@ -133,7 +133,7 @@ You will see:
 
 ---
 
-# 🔍 Step 2 — Search Text
+## Search Text
 
 1. Enter any keyword  
 2. Click "Search"
@@ -148,7 +148,7 @@ If output.csv doesn't exist:
 
 ---
 
-# 🧠 How It Works Internally
+## How It Works Internally
 
 ### Upload ZIP (POST /upload_zip)
 - Unzip ZIP contents  
@@ -162,17 +162,6 @@ If output.csv doesn't exist:
 
 ---
 
-# 🔧 Possible Future Improvements
-
-- Add “Download CSV” button  
-- Show extracted text preview  
-- Show image thumbnails  
-- Highlight matched words  
-- Use SQLite instead of CSV  
-- Add authentication  
-
----
-
-## 📄 License
+## License
 This project is a prototype for demonstration and portfolio usage.
 Feel free to modify and extend it.

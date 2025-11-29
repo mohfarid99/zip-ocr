@@ -22,7 +22,7 @@ This project allows you to:
 
 ## Project Structure
 
-\`\`\`
+```
 .
 ├── images/             
 ├── templates/
@@ -32,7 +32,7 @@ This project allows you to:
 ├── images.zip          
 ├── requirements.txt
 └── .gitattributes
-\`\`\`
+```
 
 ---
 
